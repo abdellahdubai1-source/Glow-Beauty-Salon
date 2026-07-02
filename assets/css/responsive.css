@@ -11,6 +11,30 @@
    BASE / MOBILE (0 - 767px) — applied always, overridden upward
    ========================================================================== */
 
+/* Overflow-safety: allow button labels to wrap on narrow screens instead
+   of forcing their flex/grid parent (and the page) wider than the
+   viewport. Restored to a single line at tablet+ where there's room. */
+.btn {
+  white-space: normal;
+}
+
+/* Defensive wrapping for button/link rows that don't already wrap,
+   so a long label can never push the page into horizontal scroll. */
+.form-nav,
+.footer-legal {
+  flex-wrap: wrap;
+  row-gap: var(--space-3);
+}
+
+/* Clamp the decorative offset square so it never bleeds past the
+   left edge of the viewport on narrow screens. */
+.about-preview-media::before {
+  top: -12px;
+  left: -12px;
+  width: 96px;
+  height: 96px;
+}
+
 .hamburger {
   display: flex;
 }
@@ -74,10 +98,6 @@ section {
 }
 
 .services-grid {
-  grid-template-columns: 1fr;
-}
-
-.packages-grid {
   grid-template-columns: 1fr;
 }
 
@@ -157,6 +177,17 @@ section {
    ========================================================================== */
 
 @media (min-width: 768px) {
+  .btn {
+    white-space: nowrap;
+  }
+
+  .about-preview-media::before {
+    top: -24px;
+    left: -24px;
+    width: 140px;
+    height: 140px;
+  }
+
   section {
     padding-block: var(--space-20, 5rem);
   }
@@ -166,10 +197,6 @@ section {
   }
 
   .services-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .packages-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -225,10 +252,6 @@ section {
 
   .services-grid {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .packages-grid {
-    grid-template-columns: repeat(4, 1fr);
   }
 
   .footer-grid {
@@ -305,10 +328,6 @@ section {
 
 .service-row-media img {
   height: 280px;
-}
-
-.membership-grid {
-  grid-template-columns: 1fr;
 }
 
 .gallery-masonry {
@@ -393,10 +412,6 @@ section {
 
   .before-after-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .membership-grid {
-    grid-template-columns: repeat(3, 1fr);
   }
 
   .review-grid {
