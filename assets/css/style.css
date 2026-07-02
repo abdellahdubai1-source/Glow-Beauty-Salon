@@ -14,21 +14,71 @@
 }
 
 html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
 }
 
 body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   font-family: var(--font-body);
   font-size: var(--fs-body);
   line-height: var(--lh-body);
   color: var(--color-text);
   background-color: var(--color-bg);
-  overflow-x: hidden;
+}
+
+/* ---------- GLOBAL OVERFLOW SAFETY ----------
+   Guarantees no element on any page can force horizontal scroll,
+   regardless of intrinsic content size (long text, media, tables). */
+
+img,
+video,
+svg,
+picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+section,
+header,
+footer,
+main,
+.container,
+.container--narrow {
+  max-width: 100%;
+}
+
+/* Prevents flex/grid children with long unbroken text (button labels,
+   headings, links) from forcing their parent — and the page — wider
+   than the viewport. */
+.hero-content,
+.hero-actions,
+.final-cta-content,
+.final-cta-actions,
+.nav-actions,
+.nav-links,
+.mobile-menu-footer,
+.mobile-social,
+.footer-bottom,
+.footer-social,
+.footer-legal,
+.google-review-banner,
+.testimonial-controls,
+.offer-timer,
+.form-nav,
+.contact-form,
+.newsletter-form {
+  min-width: 0;
+  max-width: 100%;
 }
 
 img {
-  max-width: 100%;
   display: block;
 }
 
@@ -185,7 +235,9 @@ section {
   transition: transform var(--duration-fast) var(--ease-out),
               box-shadow var(--duration-fast) var(--ease-out),
               background-color var(--duration-fast) var(--ease-out);
-  white-space: nowrap;
+  white-space: normal;
+  text-align: center;
+  max-width: 100%;
 }
 
 .btn:active {
@@ -601,7 +653,7 @@ section {
 
 .trust-badges .container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--space-8);
   text-align: center;
 }
@@ -704,7 +756,7 @@ section {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--space-8);
 }
 
@@ -793,7 +845,7 @@ section {
 
 .packages-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: var(--space-6);
 }
 
@@ -857,7 +909,7 @@ section {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-auto-rows: 220px;
   gap: var(--space-4);
 }
@@ -966,7 +1018,7 @@ section {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--space-8);
 }
 
@@ -1246,7 +1298,7 @@ section {
 
 .instagram-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: var(--space-2);
 }
 
@@ -1658,7 +1710,7 @@ section {
 
 .mvv-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--space-8);
 }
 
@@ -1694,7 +1746,7 @@ section {
 
 .values-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--space-6);
 }
 
@@ -1729,7 +1781,7 @@ section {
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--space-8);
   text-align: center;
 }
@@ -1753,7 +1805,7 @@ section {
 
 .full-team-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--space-8);
 }
 
@@ -1761,7 +1813,7 @@ section {
 
 .interior-showcase {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--space-4);
 }
 
@@ -2014,7 +2066,7 @@ section {
 
 .full-gallery-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--space-4);
 }
 
@@ -2031,7 +2083,7 @@ section {
 /* Before/After slider blocks */
 .before-after-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--space-8);
 }
 
@@ -2283,7 +2335,7 @@ textarea.form-control {
 
 .service-select-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--space-3);
   margin-bottom: var(--space-8);
 }
@@ -2321,7 +2373,7 @@ textarea.form-control {
 
 .timeslot-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--space-3);
   margin-bottom: var(--space-8);
 }
@@ -2422,7 +2474,7 @@ textarea.form-control {
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--space-6);
 }
 
@@ -2772,7 +2824,7 @@ textarea.form-control {
 
 .values-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--space-6);
 }
 
@@ -3045,7 +3097,7 @@ textarea.form-control {
 
 .membership-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   gap: var(--space-6);
 }
 
@@ -3104,7 +3156,7 @@ textarea.form-control {
 
 .gallery-masonry {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-auto-rows: 240px;
   gap: var(--space-4);
 }
@@ -3119,7 +3171,7 @@ textarea.form-control {
 
 .before-after-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--space-8);
 }
 
@@ -3415,7 +3467,7 @@ textarea.form-control {
 
 .service-option-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--space-4);
 }
 
@@ -3454,7 +3506,7 @@ textarea.form-control {
 
 .time-slot-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--space-3);
 }
 
@@ -3576,7 +3628,7 @@ textarea.form-control {
 
 .review-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--space-6);
 }
 
@@ -3710,7 +3762,7 @@ textarea.form-control {
 
 .contact-info-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--space-4);
   margin-top: var(--space-8);
 }
