@@ -1,0 +1,485 @@
+/* ==========================================================================
+   GLOW BEAUTY SALON — RESPONSIVE
+   Breakpoints: Mobile (0-639px, base styles in style.css) -> Large Mobile
+   (640px) -> Tablet (768px) -> Laptop (1024px) -> Desktop (1280px+)
+   Mobile-first: style.css holds compact single-column defaults where noted;
+   this file layers in progressively richer layouts as viewport grows,
+   and collapses them back down for smaller screens.
+   ========================================================================== */
+
+/* ==========================================================================
+   BASE / MOBILE (0 - 767px) — applied always, overridden upward
+   ========================================================================== */
+
+.hamburger {
+  display: flex;
+}
+
+.nav-links,
+.nav-actions .nav-cta {
+  display: none;
+}
+
+.nav-actions {
+  gap: var(--space-3);
+}
+
+.hero {
+  min-height: 92vh;
+  padding-top: var(--space-16);
+}
+
+.hero-content {
+  max-width: 100%;
+}
+
+.hero-title {
+  margin-bottom: var(--space-4);
+}
+
+.hero-actions .btn {
+  width: 100%;
+}
+
+.hero-actions {
+  flex-direction: column;
+}
+
+.hero-scroll-cue {
+  display: none;
+}
+
+section {
+  padding-block: var(--space-16);
+}
+
+.trust-badges .container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+
+.about-preview .container,
+.why-us .container {
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+.about-preview-media img,
+.why-us-media img {
+  height: 340px;
+}
+
+.about-stats {
+  gap: var(--space-8);
+}
+
+.services-grid {
+  grid-template-columns: 1fr;
+}
+
+.packages-grid {
+  grid-template-columns: 1fr;
+}
+
+.gallery-grid {
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 160px;
+}
+
+.team-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+}
+
+.instagram-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.offer-timer {
+  flex-wrap: wrap;
+}
+
+.footer-grid {
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+.footer-bottom {
+  flex-direction: column;
+  gap: var(--space-3);
+  text-align: center;
+}
+
+.newsletter-form {
+  flex-direction: column;
+}
+
+.testimonial-slide p.quote {
+  font-size: 1.125rem;
+}
+
+.section-header {
+  margin-bottom: var(--space-8);
+}
+
+.back-to-top {
+  right: 82px;
+  bottom: var(--space-4);
+}
+
+.whatsapp-float {
+  bottom: var(--space-4);
+  right: var(--space-4);
+  width: 52px;
+  height: 52px;
+}
+
+/* ==========================================================================
+   LARGE MOBILE (min-width: 640px)
+   ========================================================================== */
+
+@media (min-width: 640px) {
+  .hero-actions {
+    flex-direction: row;
+  }
+
+  .hero-actions .btn {
+    width: auto;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ==========================================================================
+   TABLET (min-width: 768px)
+   ========================================================================== */
+
+@media (min-width: 768px) {
+  section {
+    padding-block: var(--space-20, 5rem);
+  }
+
+  .trust-badges .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .packages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .instagram-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-preview-media img,
+  .why-us-media img {
+    height: 440px;
+  }
+}
+
+/* ==========================================================================
+   LAPTOP (min-width: 1024px)
+   ========================================================================== */
+
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-links,
+  .nav-actions .nav-cta {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .hero-scroll-cue {
+    display: flex;
+  }
+
+  section {
+    padding-block: var(--space-24);
+  }
+
+  .about-preview .container,
+  .why-us .container {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-16);
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .packages-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  }
+}
+
+/* ==========================================================================
+   DESKTOP (min-width: 1280px)
+   ========================================================================== */
+
+@media (min-width: 1280px) {
+  .hero-title {
+    max-width: 640px;
+  }
+}
+
+/* ==========================================================================
+   FINE-TUNING: very small phones
+   ========================================================================== */
+
+@media (max-width: 380px) {
+  :root {
+    --gutter: 1.25rem;
+  }
+
+  .trust-badges .container {
+    grid-template-columns: 1fr;
+  }
+
+  .instagram-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ==========================================================================
+   INNER-PAGE COMPONENT RESPONSIVE RULES
+   ========================================================================== */
+
+/* ---------- MOBILE BASE (0 - 767px) ---------- */
+
+.page-hero {
+  min-height: 40vh;
+}
+
+.story-split,
+.story-split.reverse,
+.mission-vision-grid {
+  grid-template-columns: 1fr;
+}
+
+.story-split.reverse .story-split-media {
+  order: 0;
+}
+
+.story-split-media img {
+  height: 300px;
+}
+
+.values-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.service-row,
+.service-row.reverse {
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  padding-block: var(--space-12);
+}
+
+.service-row.reverse .service-row-media {
+  order: 0;
+}
+
+.service-row-media img {
+  height: 280px;
+}
+
+.membership-grid {
+  grid-template-columns: 1fr;
+}
+
+.gallery-masonry {
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 160px;
+}
+
+.before-after-grid {
+  grid-template-columns: 1fr;
+}
+
+.lightbox-prev,
+.lightbox-next {
+  display: none;
+}
+
+.lightbox-content {
+  max-width: 92vw;
+}
+
+.booking-layout {
+  grid-template-columns: 1fr;
+}
+
+.booking-summary {
+  position: static;
+}
+
+.booking-card {
+  padding: var(--space-6);
+}
+
+.form-row {
+  grid-template-columns: 1fr;
+}
+
+.service-option-grid {
+  grid-template-columns: 1fr;
+}
+
+.time-slot-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.progress-step span.step-label {
+  display: none;
+}
+
+.review-grid {
+  grid-template-columns: 1fr;
+}
+
+.google-review-banner {
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.contact-layout {
+  grid-template-columns: 1fr;
+  gap: var(--space-12);
+}
+
+.contact-info-grid {
+  grid-template-columns: 1fr;
+}
+
+.pricing-table,
+.comparison-table {
+  font-size: 0.875rem;
+}
+
+/* ---------- TABLET (min-width: 768px) ---------- */
+
+@media (min-width: 768px) {
+  .values-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .gallery-masonry {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .before-after-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .membership-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .review-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .time-slot-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ---------- LAPTOP (min-width: 1024px) ---------- */
+
+@media (min-width: 1024px) {
+  .page-hero {
+    min-height: 52vh;
+  }
+
+  .story-split,
+  .story-split.reverse,
+  .mission-vision-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .story-split.reverse .story-split-media {
+    order: 2;
+  }
+
+  .story-split-media img {
+    height: 480px;
+  }
+
+  .service-row,
+  .service-row.reverse {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .service-row.reverse .service-row-media {
+    order: 2;
+  }
+
+  .service-row-media img {
+    height: 420px;
+  }
+
+  .gallery-masonry {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .lightbox-prev,
+  .lightbox-next {
+    display: flex;
+  }
+
+  .booking-layout {
+    grid-template-columns: 1.6fr 1fr;
+  }
+
+  .booking-summary {
+    position: sticky;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .service-option-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .progress-step span.step-label {
+    display: block;
+  }
+
+  .review-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+}

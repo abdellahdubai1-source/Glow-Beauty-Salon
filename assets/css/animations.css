@@ -1,0 +1,115 @@
+/* ==========================================================================
+   GLOW BEAUTY SALON — ANIMATIONS
+   Keyframes and motion utility classes. All durations/easing pull from
+   variables.css. Respects prefers-reduced-motion (see style.css base rule).
+   ========================================================================== */
+
+/* ---------- Loading screen ---------- */
+
+@keyframes loading-sweep {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* ---------- Hero scroll cue ---------- */
+
+@keyframes scroll-cue-pulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scaleY(0.6);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+/* ---------- Scroll reveal ---------- */
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes reveal-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Stagger helper — applied via inline style/JS for sibling delay */
+[data-reveal][data-reveal-delay="1"] { animation-delay: 80ms; }
+[data-reveal][data-reveal-delay="2"] { animation-delay: 160ms; }
+[data-reveal][data-reveal-delay="3"] { animation-delay: 240ms; }
+[data-reveal][data-reveal-delay="4"] { animation-delay: 320ms; }
+[data-reveal][data-reveal-delay="5"] { animation-delay: 400ms; }
+[data-reveal][data-reveal-delay="6"] { animation-delay: 480ms; }
+
+/* ---------- WhatsApp pulse ---------- */
+
+@keyframes whatsapp-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+/* ---------- Fade in (generic utility) ---------- */
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fade-in var(--duration-slow) var(--ease-out) forwards;
+}
+
+/* ---------- Gentle float (used for decorative accents) ---------- */
+
+@keyframes gentle-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.float {
+  animation: gentle-float 5s var(--ease-in-out) infinite;
+}
+
+/* ---------- Trust counter number pulse on reveal ---------- */
+
+@keyframes count-pop {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.count-pop {
+  animation: count-pop var(--duration-base) var(--ease-out) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book an Appointment | Glow Beauty Salon</title>
+  <meta name="description" content="Book your appointment at Glow Beauty Salon in minutes. Choose your service, pick a date and time, and reserve your luxury beauty ritual today.">
+  <meta name="keywords" content="book beauty salon appointment, salon booking online, bridal appointment booking">
+  <meta name="author" content="Glow Beauty Salon">
+  <link rel="canonical" href="https://www.glowbeautysalon.com/appointment.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Book an Appointment | Glow Beauty Salon">
+  <meta property="og:description" content="Your glow is just a few clicks away. Select your service, choose your time, and let us take care of the rest.">
+  <meta property="og:image" content="assets/images/beauty-consultation.webp">
+  <meta property="og:url" content="https://www.glowbeautysalon.com/appointment.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="loading-screen" role="status" aria-live="polite">
+    <p class="loading-mark">Glow<span>.</span></p>
+    <div class="loading-bar" aria-hidden="true"></div>
+    <span class="visually-hidden">Loading Glow Beauty Salon</span>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Glow<span>.</span></a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="appointment.html" class="btn btn-primary nav-cta is-active">Book Now</a>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <button class="mobile-menu-close icon-btn" aria-label="Close menu">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+    </button>
+    <nav class="mobile-nav-links" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="appointment.html">Appointment</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="mobile-menu-footer">
+      <a href="appointment.html" class="btn btn-primary btn-block">Book Now</a>
+      <div class="mobile-social">
+        <a href="#" class="icon-btn" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+        <a href="#" class="icon-btn" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h-2a5 5 0 0 0-5 5v2H6v4h2v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="https://wa.me/15550100" class="icon-btn" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 20l1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <section class="page-hero" style="min-height: 38vh;">
+      <div class="page-hero-bg" aria-hidden="true"><img src="assets/images/beauty-consultation.webp" alt="" loading="eager"></div>
+      <div class="page-hero-overlay" aria-hidden="true"></div>
+      <div class="container">
+        <div class="page-hero-content" data-reveal>
+          <div class="breadcrumb"><a href="index.html">Home</a> / <span>Appointment</span></div>
+          <h1>Reserve Your Ritual</h1>
+          <p>Your glow is just a few clicks away. Select your service, choose your preferred time, and let us take care of the rest.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING FORM -->
+    <section aria-labelledby="booking-title">
+      <div class="container">
+        <div class="booking-layout">
+
+          <div class="booking-card">
+            <h2 id="booking-title" class="visually-hidden">Appointment Booking Form</h2>
+
+            <div class="progress-steps">
+              <div class="progress-step is-active">
+                <span class="step-circle">1</span>
+                <span class="step-label">Service</span>
+              </div>
+              <div class="progress-step">
+                <span class="step-circle">2</span>
+                <span class="step-label">Date &amp; Time</span>
+              </div>
+              <div class="progress-step">
+                <span class="step-circle">3</span>
+                <span class="step-label">Your Details</span>
+              </div>
+              <div class="progress-step">
+                <span class="step-circle">4</span>
+                <span class="step-label">Confirm</span>
+              </div>
+            </div>
+
+            <form id="booking-form" novalidate>
+
+              <!-- STEP 1: SERVICE SELECTION -->
+              <div class="form-step is-active">
+                <div class="form-group">
+                  <label>Choose Your Service</label>
+                  <div class="service-option-grid">
+                    <label class="service-option">
+                      <input type="radio" name="service" value="hair-styling">
+                      <strong>Hair Styling</strong>
+                      <span>From $65 · 45 min</span>
+                    </label>
+                    <label class="service-option">
+                      <input type="radio" name="service" value="hair-coloring">
+                      <strong>Hair Coloring</strong>
+                      <span>From $120 · 90 min</span>
+                    </label>
+                    <label class="service-option">
+                      <input type="radio" name="service" value="bridal-makeup">
+                      <strong>Bridal Makeup</strong>
+                      <span>From $220 · 90 min</span>
+                    </label>
+                    <label class="service-option">
+                      <input type="radio" name="service" value="everyday-makeup">
+                      <strong>Everyday Makeup</strong>
+                      <span>From $70 · 45 min</span>
+                    </label>
+                    <label class="service-option">
+                      <input type="radio" name="service" value="hydrafacial">
+                      <strong>Hydrafacial</strong>
+                      <span>From $140 · 45 min</span>
+                    </label>
+                    <label class="service-option">
+                      <input type="radio" name="service" value="manicure-pedicure">
+                      <strong>Manicure &amp; Pedicure</strong>
+                      <span>From $90 · 80 min</span>
+                    </label>
+                    <label class="service-option">
+                      <input type="radio" name="service" value="massage">
+                      <strong>Massage</strong>
+                      <span>From $110 · 60 min</span>
+                    </label>
+                    <label class="service-option">
+                      <input type="radio" name="service" value="moroccan-bath">
+                      <strong>Moroccan Bath</strong>
+                      <span>From $135 · 75 min</span>
+                    </label>
+                  </div>
+                  <p class="form-error">Please select a service to continue.</p>
+                </div>
+                <div class="form-nav">
+                  <span></span>
+                  <button type="button" class="btn btn-primary" data-form-next>Continue</button>
+                </div>
+              </div>
+
+              <!-- STEP 2: DATE & TIME -->
+              <div class="form-step">
+                <div class="form-group">
+                  <label for="booking-date">Preferred Date</label>
+                  <input type="date" id="booking-date" class="form-control" required>
+                  <p class="form-error">Please choose a preferred date.</p>
+                </div>
+                <div class="form-group">
+                  <label>Preferred Time</label>
+                  <div class="time-slot-grid">
+                    <div class="time-slot">10:00 AM</div>
+                    <div class="time-slot">11:30 AM</div>
+                    <div class="time-slot">1:00 PM</div>
+                    <div class="time-slot">2:30 PM</div>
+                    <div class="time-slot">4:00 PM</div>
+                    <div class="time-slot">5:30 PM</div>
+                    <div class="time-slot">7:00 PM</div>
+                    <div class="time-slot">8:00 PM</div>
+                  </div>
+                  <p class="form-error time-error">Please choose a preferred time.</p>
+                </div>
+                <div class="form-nav">
+                  <button type="button" class="btn btn-secondary" data-form-prev>Back</button>
+                  <button type="button" class="btn btn-primary" data-form-next>Continue</button>
+                </div>
+              </div>
+
+              <!-- STEP 3: CLIENT DETAILS -->
+              <div class="form-step">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="client-name">Full Name</label>
+                    <input type="text" id="client-name" class="form-control" placeholder="Enter your full name" required>
+                    <p class="form-error">Please enter your name.</p>
+                  </div>
+                  <div class="form-group">
+                    <label for="client-phone">Phone Number</label>
+                    <input type="tel" id="client-phone" class="form-control" placeholder="e.g. +971 5X XXX XXXX" required>
+                    <p class="form-error">Please enter a valid phone number.</p>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="client-email">Email Address</label>
+                  <input type="email" id="client-email" class="form-control" placeholder="you@example.com" required>
+                  <p class="form-error">Please enter a valid email address.</p>
+                </div>
+                <div class="form-group">
+                  <label for="client-notes">Special Requests (Optional)</label>
+                  <textarea id="client-notes" class="form-control" placeholder="Tell us a little about what you're looking for..."></textarea>
+                </div>
+                <div class="form-nav">
+                  <button type="button" class="btn btn-secondary" data-form-prev>Back</button>
+                  <button type="button" class="btn btn-primary" data-form-next>Review Booking</button>
+                </div>
+              </div>
+
+              <!-- STEP 4: REVIEW & CONFIRM -->
+              <div class="form-step">
+                <div class="form-group">
+                  <label>Review Your Appointment</label>
+                  <p style="color: var(--color-text-muted); font-size: 0.9375rem;">Please confirm the details in the summary panel are correct before booking. A confirmation will be sent to your email and phone.</p>
+                </div>
+                <div class="form-group">
+                  <label style="display:flex; align-items:flex-start; gap: var(--space-2); font-weight: 400;">
+                    <input type="checkbox" required style="margin-top: 4px;">
+                    I understand Glow Beauty Salon's 24-hour cancellation policy.
+                  </label>
+                </div>
+                <div class="form-nav">
+                  <button type="button" class="btn btn-secondary" data-form-prev>Back</button>
+                  <button type="submit" class="btn btn-primary">Confirm Booking</button>
+                </div>
+              </div>
+
+            </form>
+
+            <!-- SUCCESS MESSAGE -->
+            <div class="booking-success">
+              <span class="icon-circle" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>
+              </span>
+              <h3>You're All Booked!</h3>
+              <p>A confirmation has been sent to your email and phone. We can't wait to welcome you — <span class="booking-success-details"></span>.</p>
+              <div class="final-cta-actions" style="justify-content: center;">
+                <a href="index.html" class="btn btn-secondary">Return Home</a>
+                <a href="https://wa.me/15550100" class="btn btn-primary">Message Us on WhatsApp</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- SUMMARY SIDEBAR -->
+          <aside class="booking-summary">
+            <h4>Your Appointment</h4>
+            <dl>
+              <div class="summary-row"><dt>Service</dt><dd data-summary="service">—</dd></div>
+              <div class="summary-row"><dt>Date</dt><dd data-summary="date">—</dd></div>
+              <div class="summary-row"><dt>Time</dt><dd data-summary="time">—</dd></div>
+              <div class="summary-row"><dt>Name</dt><dd data-summary="name">—</dd></div>
+            </dl>
+            <p style="font-size: 0.8125rem; color: var(--color-text-muted); margin-bottom: var(--space-4);">Free cancellation up to 24 hours before your appointment.</p>
+            <p style="font-size: 0.8125rem; color: var(--color-text-muted);">Prefer to book by chat? Message us directly on WhatsApp.</p>
+            <a href="https://wa.me/15550100" class="btn btn-secondary btn-block" style="margin-top: var(--space-4);">Chat on WhatsApp</a>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="section--alt" aria-labelledby="map-title">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="eyebrow">Find Us</span>
+          <h2 id="map-title" class="section-title">Visit Glow Beauty Salon</h2>
+        </div>
+        <div class="map-embed" data-reveal>
+          <iframe title="Glow Beauty Salon location map" src="https://maps.google.com/maps?q=beauty%20salon&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section aria-labelledby="booking-faq-title">
+      <div class="container container--narrow">
+        <div class="section-header" data-reveal>
+          <span class="eyebrow">Before You Book</span>
+          <h2 id="booking-faq-title" class="section-title">Booking Questions</h2>
+        </div>
+        <div class="faq-list" data-reveal>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Can I reschedule after booking?<span class="faq-icon" aria-hidden="true">+</span></button>
+            <div class="faq-answer"><p>Yes, you can reschedule through our booking system or by contacting us directly via WhatsApp or phone, with at least 24 hours' notice.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Do I need to pay a deposit?<span class="faq-icon" aria-hidden="true">+</span></button>
+            <div class="faq-answer"><p>Most services do not require a deposit. Bridal packages and group bookings may require a small deposit to secure your date.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">What if I'm running late?<span class="faq-icon" aria-hidden="true">+</span></button>
+            <div class="faq-answer"><p>Please call or WhatsApp us as soon as possible — we'll do our best to accommodate you, though your service time may be adjusted.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Glow<span>.</span></a>
+          <p>Glow Beauty Salon is a luxury beauty destination dedicated to artistry, care, and confidence.</p>
+          <div class="footer-social">
+            <a href="#" class="icon-btn" aria-label="Instagram" style="background:transparent;box-shadow:none;color:inherit;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+            <a href="#" class="icon-btn" aria-label="Facebook" style="background:transparent;box-shadow:none;color:inherit;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h-2a5 5 0 0 0-5 5v2H6v4h2v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="https://wa.me/15550100" class="icon-btn" aria-label="WhatsApp" style="background:transparent;box-shadow:none;color:inherit;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 20l1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="appointment.html">Book Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-newsletter">
+          <h4>Stay Connected</h4>
+          <p>Join our beauty circle for exclusive offers and beauty tips.</p>
+          <form class="newsletter-form" novalidate>
+            <label for="newsletter-email" class="visually-hidden">Email address</label>
+            <input type="email" id="newsletter-email" placeholder="you@example.com" required autocomplete="email">
+            <button type="submit">Subscribe</button>
+          </form>
+          <p class="newsletter-note" role="status"></p>
+          <ul class="footer-hours" style="margin-top: var(--space-6);">
+            <li><span>Mon – Sat</span><span>10AM – 8PM</span></li>
+            <li><span>Sunday</span><span>12PM – 6PM</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Glow Beauty Salon. All Rights Reserved.</span>
+        <div class="footer-legal">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-conditions.html">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/15550100" class="whatsapp-float" aria-label="Chat with Glow Beauty Salon on WhatsApp" target="_blank" rel="noopener">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 20l1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>
+  </a>
+
+  <button class="icon-btn back-to-top" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/booking.js"></script>
+</body>
+</html>
