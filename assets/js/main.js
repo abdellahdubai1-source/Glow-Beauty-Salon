@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.hamburger');
   const mobileMenu = document.querySelector('.mobile-menu');
   const mobileMenuClose = document.querySelector('.mobile-menu-close');
-  const mobileMenuLinks = document.querySelectorAll('.mobile-nav-links a');
+  const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
 
   const openMobileMenu = () => {
     mobileMenu.classList.add('is-open');
