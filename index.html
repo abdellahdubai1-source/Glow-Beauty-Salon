@@ -111,36 +111,48 @@
        3. MOBILE MENU
        ========================================================== -->
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-    <button class="mobile-menu-close icon-btn" aria-label="Close menu">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
-    </button>
+
+    <div class="mobile-menu-top">
+      <a href="index.html" class="logo">Glow<span>.</span></a>
+      <button class="mobile-menu-close icon-btn" aria-label="Close menu">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu-divider"></div>
 
     <nav class="mobile-nav-links" aria-label="Mobile navigation">
-      <a href="#home">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="appointment.html">Appointment</a>
-      <a href="testimonials.html">Testimonials</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
+      <a href="#home"><span class="nav-index">01</span>Home</a>
+      <a href="about.html"><span class="nav-index">02</span>About</a>
+      <a href="services.html"><span class="nav-index">03</span>Services</a>
+      <a href="pricing.html"><span class="nav-index">04</span>Pricing</a>
+      <a href="gallery.html"><span class="nav-index">05</span>Gallery</a>
+      <a href="appointment.html"><span class="nav-index">06</span>Appointment</a>
+      <a href="testimonials.html"><span class="nav-index">07</span>Testimonials</a>
+      <a href="faq.html"><span class="nav-index">08</span>FAQ</a>
+      <a href="contact.html"><span class="nav-index">09</span>Contact</a>
     </nav>
 
+    <div class="mobile-menu-divider mobile-menu-divider--gold"></div>
+
     <div class="mobile-menu-footer">
-      <a href="appointment.html" class="btn btn-primary btn-block">Book Now</a>
+      <div class="mobile-cta-group">
+        <a href="appointment.html" class="btn btn-primary">Book Appointment</a>
+        <a href="https://wa.me/15550100" class="btn btn-secondary">Message on WhatsApp</a>
+      </div>
       <div class="mobile-social">
         <a href="#" class="icon-btn" aria-label="Glow Beauty Salon on Instagram">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
         </a>
         <a href="#" class="icon-btn" aria-label="Glow Beauty Salon on Facebook">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h-2a5 5 0 0 0-5 5v2H6v4h2v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3z"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h-2a5 5 0 0 0-5 5v2H6v4h2v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3z"/></svg>
         </a>
-        <a href="https://wa.me/971581197208" class="icon-btn" aria-label="Message Glow Beauty Salon on WhatsApp">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 20l1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>
+        <a href="https://wa.me/15550100" class="icon-btn" aria-label="Message Glow Beauty Salon on WhatsApp">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 20l1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>
         </a>
       </div>
     </div>
+
   </div>
 
   <main id="main-content">
@@ -150,7 +162,7 @@
          ========================================================== -->
     <section class="hero" id="home">
       <div class="hero-bg" aria-hidden="true">
-        <img src="assets/images/hero-banner.jpeg" alt="" loading="eager">
+        <img src="assets/images/hero-banner.webp" alt="" loading="eager">
       </div>
       <div class="hero-overlay" aria-hidden="true"></div>
 
@@ -214,7 +226,7 @@
     <section class="about-preview" id="about" aria-labelledby="about-preview-title">
       <div class="container">
         <div class="about-preview-media" data-reveal>
-          <img src="assets/images/founder-portrait.jpeg" alt="Founder of Glow Beauty Salon standing in the softly lit salon interior" loading="lazy" width="560" height="520">
+          <img src="assets/images/founder-portrait.webp" alt="Founder of Glow Beauty Salon standing in the softly lit salon interior" loading="lazy" width="560" height="520">
         </div>
         <div class="about-preview-content" data-reveal data-reveal-delay="2">
           <span class="eyebrow">Our Story</span>
@@ -253,7 +265,7 @@
         <div class="services-grid">
           <article class="service-card" data-reveal data-reveal-delay="1">
             <div class="service-card-media">
-              <img src="assets/images/hair-styling.jpeg" alt="Stylist creating an elegant hair styling look at Glow Beauty Salon" loading="lazy" width="400" height="500">
+              <img src="assets/images/hair-styling.webp" alt="Stylist creating an elegant hair styling look at Glow Beauty Salon" loading="lazy" width="400" height="500">
             </div>
             <div class="service-card-body">
               <span class="service-card-label">Hair</span>
@@ -265,7 +277,7 @@
 
           <article class="service-card" data-reveal data-reveal-delay="2">
             <div class="service-card-media">
-              <img src="assets/images/bridal-makeup.jpeg" alt="Bridal makeup artistry being applied at Glow Beauty Salon" loading="lazy" width="400" height="500">
+              <img src="assets/images/bridal-makeup.webp" alt="Bridal makeup artistry being applied at Glow Beauty Salon" loading="lazy" width="400" height="500">
             </div>
             <div class="service-card-body">
               <span class="service-card-label">Bridal</span>
@@ -277,7 +289,7 @@
 
           <article class="service-card" data-reveal data-reveal-delay="3">
             <div class="service-card-media">
-              <img src="assets/images/hydrafacial.jpeg" alt="Client receiving a Hydrafacial treatment at Glow Beauty Salon" loading="lazy" width="400" height="500">
+              <img src="assets/images/hydrafacial.webp" alt="Client receiving a Hydrafacial treatment at Glow Beauty Salon" loading="lazy" width="400" height="500">
             </div>
             <div class="service-card-body">
               <span class="service-card-label">Skin</span>
@@ -289,7 +301,7 @@
 
           <article class="service-card" data-reveal data-reveal-delay="4">
             <div class="service-card-media">
-              <img src="assets/images/luxury-nails.jpeg" alt="Elegant manicure result at Glow Beauty Salon" loading="lazy" width="400" height="500">
+              <img src="assets/images/luxury-nails.webp" alt="Elegant manicure result at Glow Beauty Salon" loading="lazy" width="400" height="500">
             </div>
             <div class="service-card-body">
               <span class="service-card-label">Nails</span>
@@ -301,7 +313,7 @@
 
           <article class="service-card" data-reveal data-reveal-delay="5">
             <div class="service-card-media">
-              <img src="assets/images/hair-coloring.jpeg" alt="Vibrant hair coloring result at Glow Beauty Salon" loading="lazy" width="400" height="500">
+              <img src="assets/images/hair-coloring.webp" alt="Vibrant hair coloring result at Glow Beauty Salon" loading="lazy" width="400" height="500">
             </div>
             <div class="service-card-body">
               <span class="service-card-label">Hair</span>
@@ -313,7 +325,7 @@
 
           <article class="service-card" data-reveal data-reveal-delay="6">
             <div class="service-card-media">
-              <img src="assets/images/spa-massage.jpeg" alt="Relaxing spa massage treatment at Glow Beauty Salon" loading="lazy" width="400" height="500">
+              <img src="assets/images/spa-massage.webp" alt="Relaxing spa massage treatment at Glow Beauty Salon" loading="lazy" width="400" height="500">
             </div>
             <div class="service-card-body">
               <span class="service-card-label">Spa</span>
@@ -383,27 +395,27 @@
 
         <div class="gallery-grid">
           <div class="gallery-item span-tall" data-reveal data-reveal-delay="1">
-            <img src="assets/images/bridal-portrait.jpeg" alt="Bridal beauty transformation at Glow Beauty Salon" loading="lazy">
+            <img src="assets/images/bridal-portrait.webp" alt="Bridal beauty transformation at Glow Beauty Salon" loading="lazy">
             <div class="gallery-item-overlay"><span>Bridal Glam</span></div>
           </div>
           <div class="gallery-item" data-reveal data-reveal-delay="2">
-            <img src="assets/images/before-after-hair.jpeg" alt="Before and after hair color transformation at Glow Beauty Salon" loading="lazy">
+            <img src="assets/images/before-after-hair.webp" alt="Before and after hair color transformation at Glow Beauty Salon" loading="lazy">
             <div class="gallery-item-overlay"><span>Hair Color</span></div>
           </div>
           <div class="gallery-item" data-reveal data-reveal-delay="3">
-            <img src="assets/images/before-after-skin.jpeg" alt="Before and after skin treatment result at Glow Beauty Salon" loading="lazy">
+            <img src="assets/images/before-after-skin.webp" alt="Before and after skin treatment result at Glow Beauty Salon" loading="lazy">
             <div class="gallery-item-overlay"><span>Skin Renewal</span></div>
           </div>
           <div class="gallery-item span-tall" data-reveal data-reveal-delay="4">
-            <img src="assets/images/happy-client.jpeg" alt="Radiant client after a full beauty treatment at Glow Beauty Salon" loading="lazy">
+            <img src="assets/images/happy-client.webp" alt="Radiant client after a full beauty treatment at Glow Beauty Salon" loading="lazy">
             <div class="gallery-item-overlay"><span>Full Glow-Up</span></div>
           </div>
           <div class="gallery-item" data-reveal data-reveal-delay="5">
-            <img src="assets/images/luxury-nails.jpeg" alt="Nail art transformation at Glow Beauty Salon" loading="lazy">
+            <img src="assets/images/luxury-nails.webp" alt="Nail art transformation at Glow Beauty Salon" loading="lazy">
             <div class="gallery-item-overlay"><span>Nail Artistry</span></div>
           </div>
           <div class="gallery-item" data-reveal data-reveal-delay="6">
-            <img src="assets/images/eyelash-extensions.jpeg" alt="Eyelash extension result at Glow Beauty Salon" loading="lazy">
+            <img src="assets/images/eyelash-extensions.webp" alt="Eyelash extension result at Glow Beauty Salon" loading="lazy">
             <div class="gallery-item-overlay"><span>Lash Artistry</span></div>
           </div>
         </div>
@@ -420,7 +432,7 @@
     <section aria-labelledby="why-us-title">
       <div class="container">
         <div class="why-us-media" data-reveal>
-          <img src="assets/images/beauty-consultation.jpeg" alt="Therapist consulting with a client at Glow Beauty Salon" loading="lazy" width="560" height="560">
+          <img src="assets/images/beauty-consultation.webp" alt="Therapist consulting with a client at Glow Beauty Salon" loading="lazy" width="560" height="560">
         </div>
         <div data-reveal data-reveal-delay="2">
           <span class="eyebrow">Why Choose Us</span>
@@ -481,28 +493,28 @@
         <div class="team-grid">
           <div class="team-card" data-reveal data-reveal-delay="1">
             <div class="team-card-media">
-              <img src="assets/images/beauty-team.jpeg" alt="Amira Hassan, Senior Hair Stylist at Glow Beauty Salon" loading="lazy" width="300" height="400">
+              <img src="assets/images/beauty-team.webp" alt="Amira Hassan, Senior Hair Stylist at Glow Beauty Salon" loading="lazy" width="300" height="400">
             </div>
             <h4>Amira Hassan</h4>
             <span>Senior Hair Stylist</span>
           </div>
           <div class="team-card" data-reveal data-reveal-delay="2">
             <div class="team-card-media">
-              <img src="assets/images/beauty-team.jpeg" alt="Layla Nasser, Bridal Makeup Artist at Glow Beauty Salon" loading="lazy" width="300" height="400">
+              <img src="assets/images/beauty-team.webp" alt="Layla Nasser, Bridal Makeup Artist at Glow Beauty Salon" loading="lazy" width="300" height="400">
             </div>
             <h4>Layla Nasser</h4>
             <span>Bridal Makeup Artist</span>
           </div>
           <div class="team-card" data-reveal data-reveal-delay="3">
             <div class="team-card-media">
-              <img src="assets/images/beauty-team.jpeg" alt="Sofia Reyes, Skin &amp; Facial Specialist at Glow Beauty Salon" loading="lazy" width="300" height="400">
+              <img src="assets/images/beauty-team.webp" alt="Sofia Reyes, Skin &amp; Facial Specialist at Glow Beauty Salon" loading="lazy" width="300" height="400">
             </div>
             <h4>Sofia Reyes</h4>
             <span>Skin &amp; Facial Specialist</span>
           </div>
           <div class="team-card" data-reveal data-reveal-delay="4">
             <div class="team-card-media">
-              <img src="assets/images/beauty-team.jpeg" alt="Nadia Farouk, Nail Artist at Glow Beauty Salon" loading="lazy" width="300" height="400">
+              <img src="assets/images/beauty-team.webp" alt="Nadia Farouk, Nail Artist at Glow Beauty Salon" loading="lazy" width="300" height="400">
             </div>
             <h4>Nadia Farouk</h4>
             <span>Nail Artist</span>
@@ -532,7 +544,7 @@
               <div class="testimonial-stars" aria-hidden="true">★★★★★</div>
               <p class="quote">"I trusted Glow with my wedding day look, and they exceeded every expectation. My makeup stayed flawless for over twelve hours — I felt like the best version of myself."</p>
               <div class="testimonial-author">
-                <img src="assets/images/happy-client.jpeg" alt="" loading="lazy">
+                <img src="assets/images/happy-client.webp" alt="" loading="lazy">
                 <div class="testimonial-author-info">
                   <strong>Sarah M.</strong>
                   <span>Bridal Makeup</span>
@@ -544,7 +556,7 @@
               <div class="testimonial-stars" aria-hidden="true">★★★★★</div>
               <p class="quote">"My skin has never looked this radiant. The staff took the time to understand my skin type before recommending anything — that level of care is rare."</p>
               <div class="testimonial-author">
-                <img src="assets/images/happy-client.jpeg" alt="" loading="lazy">
+                <img src="assets/images/happy-client.webp" alt="" loading="lazy">
                 <div class="testimonial-author-info">
                   <strong>Aisha K.</strong>
                   <span>Hydrafacial</span>
@@ -556,7 +568,7 @@
               <div class="testimonial-stars" aria-hidden="true">★★★★★</div>
               <p class="quote">"I've had my color done at several salons, but nothing compares to the precision here. Healthy, vibrant, and exactly the tone I wanted."</p>
               <div class="testimonial-author">
-                <img src="assets/images/happy-client.jpeg" alt="" loading="lazy">
+                <img src="assets/images/happy-client.webp" alt="" loading="lazy">
                 <div class="testimonial-author-info">
                   <strong>Emily R.</strong>
                   <span>Hair Coloring</span>
@@ -568,7 +580,7 @@
               <div class="testimonial-stars" aria-hidden="true">★★★★★</div>
               <p class="quote">"An experience unlike anything I've tried before. My skin felt incredibly soft for days afterward. Pure indulgence."</p>
               <div class="testimonial-author">
-                <img src="assets/images/happy-client.jpeg" alt="" loading="lazy">
+                <img src="assets/images/happy-client.webp" alt="" loading="lazy">
                 <div class="testimonial-author-info">
                   <strong>Layla H.</strong>
                   <span>Moroccan Bath</span>
@@ -601,7 +613,7 @@
          ========================================================== -->
     <section class="special-offer" aria-labelledby="offer-title">
       <div class="special-offer-bg" aria-hidden="true">
-        <img src="assets/images/special-offer.jpeg" alt="" loading="lazy">
+        <img src="assets/images/special-offer.webp" alt="" loading="lazy">
       </div>
       <div class="special-offer-overlay" aria-hidden="true"></div>
 
@@ -696,37 +708,37 @@
 
         <div class="instagram-grid" data-reveal>
           <a href="#" class="instagram-item" aria-label="View post on Instagram">
-            <img src="assets/images/instagram-beauty.jpeg" alt="Beauty inspiration post from Glow Beauty Salon Instagram" loading="lazy">
+            <img src="assets/images/instagram-beauty.webp" alt="Beauty inspiration post from Glow Beauty Salon Instagram" loading="lazy">
             <div class="instagram-item-overlay" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg>
             </div>
           </a>
           <a href="#" class="instagram-item" aria-label="View post on Instagram">
-            <img src="assets/images/hair-styling.jpeg" alt="Hair styling post from Glow Beauty Salon Instagram" loading="lazy">
+            <img src="assets/images/hair-styling.webp" alt="Hair styling post from Glow Beauty Salon Instagram" loading="lazy">
             <div class="instagram-item-overlay" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg>
             </div>
           </a>
           <a href="#" class="instagram-item" aria-label="View post on Instagram">
-            <img src="assets/images/bridal-makeup.jpeg" alt="Bridal makeup post from Glow Beauty Salon Instagram" loading="lazy">
+            <img src="assets/images/bridal-makeup.webp" alt="Bridal makeup post from Glow Beauty Salon Instagram" loading="lazy">
             <div class="instagram-item-overlay" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg>
             </div>
           </a>
           <a href="#" class="instagram-item" aria-label="View post on Instagram">
-            <img src="assets/images/luxury-nails.jpeg" alt="Nail art post from Glow Beauty Salon Instagram" loading="lazy">
+            <img src="assets/images/luxury-nails.webp" alt="Nail art post from Glow Beauty Salon Instagram" loading="lazy">
             <div class="instagram-item-overlay" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg>
             </div>
           </a>
           <a href="#" class="instagram-item" aria-label="View post on Instagram">
-            <img src="assets/images/moroccan-bath.jpeg" alt="Moroccan bath post from Glow Beauty Salon Instagram" loading="lazy">
+            <img src="assets/images/moroccan-bath.webp" alt="Moroccan bath post from Glow Beauty Salon Instagram" loading="lazy">
             <div class="instagram-item-overlay" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg>
             </div>
           </a>
           <a href="#" class="instagram-item" aria-label="View post on Instagram">
-            <img src="assets/images/eyelash-extensions.jpeg" alt="Lash extension post from Glow Beauty Salon Instagram" loading="lazy">
+            <img src="assets/images/eyelash-extensions.webp" alt="Lash extension post from Glow Beauty Salon Instagram" loading="lazy">
             <div class="instagram-item-overlay" aria-hidden="true">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg>
             </div>
@@ -744,7 +756,7 @@
          ========================================================== -->
     <section class="final-cta" aria-labelledby="final-cta-title">
       <div class="final-cta-bg" aria-hidden="true">
-        <img src="assets/images/booking-cta-banner.jpeg" alt="" loading="lazy">
+        <img src="assets/images/booking-cta-banner.webp" alt="" loading="lazy">
       </div>
       <div class="final-cta-overlay" aria-hidden="true"></div>
 
@@ -755,7 +767,7 @@
           <p>Reserve your ritual today and step into the glow you deserve.</p>
           <div class="final-cta-actions">
             <a href="appointment.html" class="btn btn-primary">Book Now</a>
-            <a href="https://wa.me/971581197208" class="btn btn-outline-light">Chat on WhatsApp</a>
+            <a href="https://wa.me/15550100" class="btn btn-outline-light">Chat on WhatsApp</a>
           </div>
         </div>
       </div>
@@ -780,7 +792,7 @@
             <a href="#" class="icon-btn" aria-label="Glow Beauty Salon on Facebook" style="background:transparent;box-shadow:none;color:inherit;">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h-2a5 5 0 0 0-5 5v2H6v4h2v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3z"/></svg>
             </a>
-            <a href="https://wa.me/971581197208" class="icon-btn" aria-label="Message Glow Beauty Salon on WhatsApp" style="background:transparent;box-shadow:none;color:inherit;">
+            <a href="https://wa.me/15550100" class="icon-btn" aria-label="Message Glow Beauty Salon on WhatsApp" style="background:transparent;box-shadow:none;color:inherit;">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 20l1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>
             </a>
           </div>
@@ -838,7 +850,7 @@
   <!-- ==========================================================
        18. WHATSAPP FLOATING BUTTON
        ========================================================== -->
-  <a href="https://wa.me/971581197208" class="whatsapp-float" aria-label="Chat with Glow Beauty Salon on WhatsApp" target="_blank" rel="noopener">
+  <a href="https://wa.me/15550100" class="whatsapp-float" aria-label="Chat with Glow Beauty Salon on WhatsApp" target="_blank" rel="noopener">
     <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 20l1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>
   </a>
 
